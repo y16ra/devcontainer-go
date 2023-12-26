@@ -1,0 +1,22 @@
+{
+    "name": "go-devcontainer",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "golang",
+    "workspaceFolder": "/workspace/go",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "EditorConfig.EditorConfig",
+                "golang.go"
+            ],
+            "settings": {
+                "go.gopath": "/go",
+                "go.formatTool": "gofmt",
+                "go.useLanguageServer": true,
+                "[go]": {
+                    "editor.formatOnSave": true
+                }
+            }
+        }
+    }
+}

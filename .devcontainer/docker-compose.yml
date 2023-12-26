@@ -1,0 +1,10 @@
+version: '3'
+services:
+  golang:
+    build: .
+    volumes:
+      - ..:/workspace/go
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    
